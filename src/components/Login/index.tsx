@@ -2,7 +2,8 @@ import './Login.scss'
 
 const Login = () => {
     return (
-        <main>
+        <body>
+            <main>
             <section>
                 <img src="./src/components/Login/assets/parrot-logo-blue.svg"></img>
                 <h1>Sysmap Parrot</h1>
@@ -21,6 +22,7 @@ const Login = () => {
                 <p>Não possui uma conta? <a href="">Crie uma agora!</a></p>
             </section>
         </main>
+        </body>
     )
 }
 

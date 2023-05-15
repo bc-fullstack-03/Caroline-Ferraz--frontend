@@ -4,88 +4,91 @@
     font-family: 'Inter', sans-serif;
 }
 
-main {
-    section {
-        img{
-            margin-top: 2rem;
-            height: 12rem;
-        }
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h1 {
-            font-size: 2.1rem;
-            margin-bottom: 0;
-        }
-        p {
-            margin-top: 5px;
-            color: $color-grey;
-        }
-        form {
-            margin-top: 10px;
-            width: 30%;
-            .label-input {
-                color: $color-white;
-                font-weight: 100;
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 20px;
-                border: none;
-                label {
-                    align-self: baseline;
-                    margin-bottom: 5px;
-                }
-                input {
-                    color: $color-grey;
-                    font-weight: 500;
-                    padding-left: 36px;
-                    height: 2rem;
-                    border-radius: 5px;    
-                    background-color: $color-background;     
-                    background-repeat: no-repeat;
-                    background-position: 10px center;
-                    background-size: 18px;
-                }
-                .input-email{
-                    background-image: url('./src/components/Login/assets/envelope-icon.svg');  
-                }
-                .input-password{
-                    background-image: url('./src/components/Login/assets/lock-icon.svg');  
-                }              
-                input:hover{
-                    border-color: $color-grey;
-                }
+body{
+    overflow-y: hidden;
+    main {
+        section {
+            img{
+                margin-top: 1rem;
+                height: 12rem;
             }
-            button{
-                background-color: $color-blue;
-                width: 100%;
-                height: 2.4rem;
-                border-radius: 6px;  
-                color: $color-background;
-                font-weight: 800;
-                font-size: 1rem;
-                border: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                font-size: 2.1rem;
+                margin-bottom: 0;
             }
-            button:hover{
+            p {
+                margin-top: 5px;
+                color: $color-grey;
+            }
+            form {
+                margin-top: 10px;
+                width: 30%;
+                .label-input {
+                    color: $color-white;
+                    font-weight: 100;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    border: none;
+                    label {
+                        align-self: baseline;
+                        margin-bottom: 5px;
+                    }
+                    input {
+                        color: $color-grey;
+                        font-weight: 500;
+                        padding-left: 36px;
+                        height: 2rem;
+                        border-radius: 5px;    
+                        background-color: $color-background;     
+                        background-repeat: no-repeat;
+                        background-position: 10px center;
+                        background-size: 18px;
+                    }
+                    .input-email{
+                        background-image: url('./src/components/Login/assets/envelope-icon.svg');  
+                    }
+                    .input-password{
+                        background-image: url('./src/components/Login/assets/lock-icon.svg');  
+                    }              
+                    input:hover{
+                        border-color: $color-grey;
+                    }
+                }
+                button{
+                    background-color: $color-blue;
+                    width: 100%;
+                    height: 2.4rem;
+                    border-radius: 6px;  
+                    color: $color-background;
+                    font-weight: 800;
+                    font-size: 1rem;
+                    border: none;
+                }
+                button:hover{
+                    cursor: pointer;
+                    transition-duration: 400ms;
+                    letter-spacing: 3px;
+                }           
+            }
+            p {
+                margin-top: 1rem;
+                color: $color-grey;
+                font-size: .9rem;
+            }
+            a {
+                text-decoration: none;
+                color: $color-grey;
+                font-size: .9rem;
+            }
+            a:hover{
                 cursor: pointer;
-                opacity: 70%;
+                color: $color-white;
                 transition-duration: 400ms;
-            }           
-        }
-        p {
-            margin-top: 1rem;
-            color: $color-grey;
-            font-size: .9rem;
-        }
-        a {
-            text-decoration: none;
-            color: $color-grey;
-            font-size: .9rem;
-        }
-        a:hover{
-            cursor: pointer;
-            color: $color-white;
-            transition-duration: 400ms;
+            }
         }
     }
 }
